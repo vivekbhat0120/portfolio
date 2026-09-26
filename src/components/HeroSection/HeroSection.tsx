@@ -85,7 +85,7 @@ export const HeroSection = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5, duration: 0.8 }}
           >
-            I am a passionate Frontend/Web Developer with over 2 years of experience in crafting responsive and user-friendly web applications. I specialize in React, TypeScript, and modern web technologies, delivering high-quality solutions that enhance user experiences and drive business success.
+            I am a Full Stack Developer with 3 years of experience building and maintaining responsive web applications, ERP/CRM modules, and SaaS workflows. I specialize in React, JavaScript, Node.js, REST APIs, MongoDB, and PostgreSQL — with hands-on experience in authentication, Razorpay integration, third-party APIs, and deployment on AWS & Render.
           </motion.p>
 
           <motion.div 
@@ -137,7 +137,7 @@ export const HeroSection = () => {
         >
           <HangingIdCard
             name="Vivek Bhat"
-            role="Frontend/Web Developer"
+            role="Full Stack Developer"
             badgeId="VB-89240-PRO"
             accentColor="#8b5cf6"
             ropeLength={75}
@@ -167,7 +167,7 @@ export const HeroSection = () => {
                 <div>
                   <h3 className="text-xl font-extrabold tracking-tight text-foreground">Vivek Bhat</h3>
                   <div className="inline-flex items-center gap-1.5 mt-1 px-3 py-0.5 rounded-full bg-primary/10 border border-primary/30 text-primary text-xs font-semibold">
-                    <span>Frontend/Web Developer</span>
+                    <span>Full Stack Developer</span>
                   </div>
                 </div>
 
@@ -177,7 +177,7 @@ export const HeroSection = () => {
                 <div className="grid grid-cols-2 gap-2.5 w-full text-left bg-muted/40 p-3 rounded-xl border border-border/50">
                   <div>
                     <span className="text-muted-foreground block text-[9px] uppercase tracking-widest font-bold">Specialty</span>
-                    <span className="font-bold text-foreground text-xs">Developer</span>
+                    <span className="font-bold text-foreground text-xs">Full Stack Developer</span>
                   </div>
                   <div>
                     <span className="text-muted-foreground block text-[9px] uppercase tracking-widest font-bold">Location</span>
@@ -185,7 +185,7 @@ export const HeroSection = () => {
                   </div>
                   <div>
                     <span className="text-muted-foreground block text-[9px] uppercase tracking-widest font-bold">Experience</span>
-                    <span className="font-bold text-foreground text-xs">2+ Years</span>
+                    <span className="font-bold text-foreground text-xs">3 Years</span>
                   </div>
                   <div>
                     <span className="text-muted-foreground block text-[9px] uppercase tracking-widest font-bold">Status</span>
