@@ -16,12 +16,12 @@ export const AboutSection = () => {
               Passionate about <span className="text-gradient-primary">Digital Excellence</span>
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              I am a developer with expertise in React, JavaScript, HTML, and CSS, focused on building responsive 
-              and user-centric web applications. Skilled in modern UI frameworks like SASS, Bootstrap, and 
-              Material UI to deliver clean and scalable designs. Experienced in API integration and 
-              third-party services, with working knowledge of Node.js, MongoDB, and PostgreSQL. Familiar 
-              with deploying applications on AWS and Render. Committed to clean code, continuous learning, 
-              and delivering high-quality user experiences.
+              Full Stack Developer with 3 years of experience at AgRaz LLP building responsive web
+              applications, ERP/CRM modules, and SaaS workflows. Hands-on with React.js, JavaScript (ES6+),
+              HTML5, CSS3, SCSS/SASS, Bootstrap, and Material UI on the frontend, and Node.js, REST APIs,
+              MongoDB, and PostgreSQL on the backend. Experienced in Firebase Authentication, Google Sign-In,
+              email verification, YouTube API, Razorpay payment gateway, and deployments on AWS & Render.
+              Focused on clean code, reliable functionality, and user-friendly digital experiences.
             </p>
           </div>
         </div>
