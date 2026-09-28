@@ -2,19 +2,25 @@ import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 
 const technologies = [
-  { name: "JavaScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" },
-  { name: "Sass", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg" },
+  { name: "HTML5", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" },
+  { name: "CSS3", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" },
+  { name: "JavaScript (ES6+)", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" },
+  { name: "React.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" },
   { name: "Bootstrap", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" },
-  { name: "MUI", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/materialui/materialui-original.svg" },
-  { name: "Golang", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original.svg" },
-  { name: "Firebase", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-plain.svg" },
-  { name: "GitHub", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" },
-  { name: "Razorpay", icon: "inline-razorpay" },
-  { name: "React", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" },
+  { name: "Material UI", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/materialui/materialui-original.svg" },
+  { name: "SCSS/SASS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg" },
   { name: "Node.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" },
+  { name: "REST APIs", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg" },
   { name: "MongoDB", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" },
   { name: "PostgreSQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" },
+  { name: "Firebase Auth", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-plain.svg" },
+  { name: "Git", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" },
+  { name: "GitHub", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" },
+  { name: "Vite", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg" },
+  { name: "ESLint", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/eslint/eslint-original.svg" },
   { name: "AWS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" },
+  { name: "Razorpay", icon: "inline-razorpay" },
+  { name: "Render", icon: "inline-render" },
 ];
 
 const RazorpayIcon = ({ className = "w-5 h-5" }: { className?: string }) => (
@@ -23,6 +29,12 @@ const RazorpayIcon = ({ className = "w-5 h-5" }: { className?: string }) => (
       <path fill="#3395FF" d="M299.6 262.7l-15.7 58 90-58.3-59 220h60l87-325" />
       <path fill="#072654" className="dark:fill-white" d="M202.6 390l-24.8 92.4h122.7l50.2-188-148 95.5" />
     </g>
+  </svg>
+);
+
+const RenderIcon = ({ className = "w-5 h-5" }: { className?: string }) => (
+  <svg viewBox="0 0 24 24" fill="currentColor" className={className} aria-label="Render" role="img">
+    <path d="M18.263.007c-3.121-.147-5.744 2.109-6.192 5.082-.018.138-.045.272-.067.405-.696 3.703-3.936 6.507-7.827 6.507-1.388 0-2.691-.356-3.825-.979a.2024.2024 0 0 0-.302.178V24H12v-8.999c0-1.656 1.338-3 2.987-3h2.988c3.382 0 6.103-2.817 5.97-6.244-.12-3.084-2.61-5.603-5.682-5.75" />
   </svg>
 );
 
@@ -126,6 +138,8 @@ const TechStackSection = () => {
             >
               {tech.icon === "inline-razorpay" ? (
                 <RazorpayIcon className="w-5 h-5 object-contain group-hover:scale-110 transition-transform duration-300 shrink-0 pointer-events-none" />
+              ) : tech.icon === "inline-render" ? (
+                <RenderIcon className="w-5 h-5 object-contain group-hover:scale-110 transition-transform duration-300 shrink-0 pointer-events-none" />
               ) : (
                 <img 
                   src={tech.icon} 
