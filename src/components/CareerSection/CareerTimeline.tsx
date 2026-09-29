@@ -10,34 +10,34 @@ import {
 export const CareerTimeline = () => {
   const careerEvents = [
     {
-      title: "Custom Web Applications",
+      title: "Full Stack Developer — AgRaz LLP (3 Years)",
       description:
-        "Developing tailored web applications to meet unique business needs. From concept to deployment, I create robust and scalable web solutions that streamline operations.",
+        "Develop and maintain responsive web interfaces with React.js, JavaScript, HTML5, CSS3, Bootstrap and Material UI. Build backend functionality and RESTful APIs with Node.js, and work with MongoDB & PostgreSQL for data modelling, storage and retrieval.",
       icon: <Globe className="h-4 w-4 mr-2 text-primary" />,
     },
     {
-      title: "Interactive UI Development",
+      title: "ERP / CRM Modules — User Management & Workflows",
       description:
-        "Building dynamic and engaging user interfaces with modern JavaScript frameworks like React and Vue. Enhance user interaction with smooth animations and intuitive navigation.",
+        "Contribute to ERP and CRM modules including user management, data handling, workflow optimisation and system integrations. Implement frontend features and integrations for usability and efficient data flow.",
       icon: <Layout className="h-4 w-4 mr-2 text-primary" />,
     },
     {
-      title: "Security & Maintenance",
+      title: "Authentication, Payments & Third-Party APIs",
       description:
-        "Providing ongoing website maintenance and security updates. I monitor for vulnerabilities, apply patches, and ensure your web applications remain secure and up-to-date.",
+        "Integrate Firebase Authentication, Google Sign-In, email verification, YouTube API and Razorpay payment gateway. Implemented subscription plans, secure auth workflows and workflow automation for SaaS platforms like MIVENT.",
       icon: <Shield className="h-4 w-4 mr-2 text-primary" />,
     },
     {
-      title: "API Integration",
+      title: "API Integration & Data Exchange",
       description:
-        "Integrating third-party APIs to enhance functionality and streamline workflows. I connect your applications with external services for payment processing, data retrieval, and more.",
+        "Integrating third-party APIs and REST services to enhance functionality and streamline workflows — payment processing, data retrieval, frontend-to-backend data flow and business-logic support.",
       icon: <Plug className="h-4 w-4 mr-2 text-primary" />,
     },
     {
-      title: "Cloud Deployment",
-      subtitle: "CreativeSpark Agency",
+      title: "Testing, Debugging & Cloud Deployment",
+      subtitle: "AgRaz LLP",
       description:
-        "Deploying web applications to cloud platforms like AWS, Azure, and Render. I ensure scalable and reliable hosting solutions for your web projects.",
+        "Test and debug features, resolve defects, maintain code quality with Git, GitHub, Vite & ESLint, and assist with deployment, configuration and production support on AWS and Render.",
       icon: <Cloud className="h-4 w-4 mr-2 text-primary" />,
     },
   ];
@@ -46,8 +46,8 @@ export const CareerTimeline = () => {
     <div id="career">
       <ScrollTimeline
         events={careerEvents}
-        title="What I Do"
-        subtitle="Delivering comprehensive digital solutions that cover the entire lifecycle of professional product engineering."
+        title="Professional Experience"
+        subtitle="Full Stack Developer with 3 years at AgRaz LLP — building responsive web apps, ERP/CRM modules, and SaaS workflows with React, Node.js, REST APIs, MongoDB & PostgreSQL."
         animationOrder="staggered"
         cardAlignment="alternating"
         cardVariant="elevated"
