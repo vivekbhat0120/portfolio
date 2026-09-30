@@ -9,15 +9,15 @@ export const ProjectsSection = () => {
   const projects = [
     {
       id: 1,
-      title: "Mivent - Event Management Platform",
-      subtitle: "An event management platform to manage events, team members, services, quotations, and billing.",
+      title: "MIVENT",
+      subtitle: "Quotation, billing, project & team management with responsive React UI, REST APIs, MongoDB backend, Firebase Auth, Google Sign-In, email verification, Razorpay & subscription plans.",
       link: "https://miventsite.com/support",
       image: mivent,
       gridClass: "md:col-span-7 h-[420px]",
     },
     {
       id: 2,
-      title: "PH Clicks Portfolio",
+      title: "PH Clicks",
       subtitle: "A sleek and responsive portfolio website showcasing PH Clicks’ photography and creative work.",
       link: "https://phclicks.netlify.app/",
       image: phc,
@@ -25,15 +25,15 @@ export const ProjectsSection = () => {
     },
     {
       id: 3,
-      title: "AgRaz - Smart Agriculture ERP",
-      subtitle: "A smart Agriculture ERP built for modern farmers and agribusinesses to digitize their agricultural journey.",
+      title: "AgRaz",
+      subtitle: "ERP/CRM functionality for user management, data handling, system integrations & workflow optimisation — frontend features with efficient frontend-to-backend data flow.",
       link: "https://agrazllp.com/",
       image: agraz,
       gridClass: "md:col-span-5 h-[360px]",
     },
     {
       id: 4,
-      title: "Bakula - E-commerce Platform",
+      title: "Bakula",
       subtitle: "An e-commerce platform for discover & purchase authentic homemade products from local creators.",
       link: "https://www.bakulahome.in/",
       image: bakula,
