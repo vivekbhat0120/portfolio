@@ -4,9 +4,9 @@ import { MorphingText } from "../lightswind/morphing-text";
 
 export const Footer = () => {
   const morphingTexts = [
-    "Frontend Developer",
-    "Web developer",
     "Full Stack Developer",
+    "MERN Stack Developer",
+    "React & Node.js Developer",
     "Vivek Bhat",
   ];
 
@@ -52,7 +52,7 @@ export const Footer = () => {
                 Vivek Bhat
               </span>
               <span className="text-[10px] font-bold text-muted-foreground tracking-widest uppercase mt-0.5">
-                Frontend/Web Developer
+                Full Stack Developer
               </span>
             </div>
           </div>
