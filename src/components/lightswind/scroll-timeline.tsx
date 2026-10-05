@@ -105,7 +105,7 @@ export const ScrollTimeline = ({
   const progressHeight = useTransform(smoothProgress, [0, 1], ["0%", "100%"]);
 
   useEffect(() => {
-    const unsubscribe = scrollYProgress.onChange((v) => {
+    const unsubscribe = scrollYProgress.on("change", (v) => {
       const newIndex = Math.floor(v * events.length);
       if (
         newIndex !== activeIndex &&
@@ -332,8 +332,10 @@ export const ScrollTimeline = ({
                     initial={animationProps.initial}
                     whileInView={animationProps.whileInView}
                     viewport={animationProps.viewport}
-                    style={parallaxIntensity > 0 ? { y: yOffset } : undefined}
                   >
+                    <motion.div
+                      style={parallaxIntensity > 0 ? { y: yOffset } : undefined}
+                    >
                     <Card className="bg-background border">
                       <CardContent className="p-6">
                         <div className="flex items-center gap-2 mb-2">
@@ -352,6 +354,7 @@ export const ScrollTimeline = ({
                         </p>
                       </CardContent>
                     </Card>
+                    </motion.div>
                   </motion.div>
                 </div>
               );
