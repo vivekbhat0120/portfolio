@@ -281,8 +281,10 @@ export function SmoothCursor({
       <motion.div
         style={{
           position: "fixed",
-          left: cursorX,
-          top: cursorY,
+          left: 0,
+          top: 0,
+          x: cursorX,
+          y: cursorY,
           translateX: "-50%",
           translateY: "-50%",
           rotate: rotateOnMove ? rotation : 0,
@@ -291,14 +293,6 @@ export function SmoothCursor({
           pointerEvents: "none",
           willChange: "transform",
           filter: glowEffect ? "drop-shadow(0 0 10px rgba(139, 92, 246, 0.5))" : "none",
-        }}
-        initial={{ scale: 0, opacity: 0 }}
-        animate={{ scale: 1, opacity: 1 }}
-        exit={{ scale: 0, opacity: 0 }}
-        transition={{
-          type: "spring",
-          stiffness: 400,
-          damping: 30,
         }}
         className={cn("select-none text-primary pointer-events-none hidden md:block", className)}
       >
